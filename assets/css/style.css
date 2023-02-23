@@ -1,4 +1,8 @@
 /* CSS Reset */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.8rem;
@@ -207,7 +211,8 @@ footer .social-links a {
 }
 
 #footer {
-	padding: 0;
+	padding: 20px 0 0;
+	background-color: #f8f8f8;
 }
 
 /*Modal*/
