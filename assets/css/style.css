@@ -142,7 +142,7 @@ section {
 }
 
 .link-arrow.link-dark {
-    color: var(--body);
+    color: #202631;
 }
 .link-arrow.link-dark:hover {
     color: white;
@@ -220,7 +220,7 @@ footer .social-links a {
 	position: unset !important;
 }
 
-/*/*MEDIA Queries*/
+/*MEDIA Queries*/
 
 @media (min-width: 1400px) {
 	.container {
@@ -265,6 +265,10 @@ footer .social-links a {
   #navbar {
   	padding: 14px;
   }
-}*/
+
+  section {
+  	padding: 100px 0 !important;
+  }
+}
 
 	
