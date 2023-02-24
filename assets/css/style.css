@@ -21,16 +21,17 @@ a {
 	transition: all 0.4s ease;
 }
 
-a:hover {
-	color: #202631;
-}
 
 img {
 	width: 100%;
 }
 
 section {
-	padding: 170px 0;
+	padding: 150px 0;
+}
+
+.color_blue {
+	color: #296da9;
 }
 
 /* Navigation Menu */
@@ -72,7 +73,11 @@ section {
 
 .social-links a:hover {
 	color:#fff;
-	background-color: #202631;
+	background-color: #296da9;
+}
+
+.active {
+	color: #296da9 !important;
 }
 
 /* Hero section */
@@ -89,6 +94,20 @@ section {
 	font-weight: 900;
 }
 
+#hero a {
+    background-color: #296da9;
+	border: 2px solid #296da9;
+	color: #fff;
+	font-weight: 500;
+}
+
+#hero a:hover {
+	-webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+	background-color: transparent;
+	border: 2px solid #202631;
+	color: #202631;
+}
 
 #hero a:active {
 	color: #fff;
@@ -113,7 +132,7 @@ section {
 .intro .hr-line {
 	width: 60px;
 	height: 4px;
-	background-color: #202631;
+	background-color: #296da9;
 	display: inline-block;
 }
 
@@ -186,6 +205,126 @@ section {
 	border-radius: 30px;
 }
 
+#about a {
+	-webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background-color: #296da9;
+	border: 2px solid #296da9;
+	color: #fff;
+	font-weight: 500;
+}
+
+#about a:hover {
+	background-color: transparent;
+	border: 2px solid #202631;
+	color: #202631;
+}
+
+#about a:active {
+	color: #fff;
+	background-color: #202631;
+	border: none;
+}
+
+/* Skills */
+
+#about .intro li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+#about .intro p {
+	margin: 0;
+	font-weight: 500;
+}
+
+.bar {
+	border: 1px solid #202631;
+	display: block;
+	height: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bar span {
+	height: 15px;
+	float: left;
+	background: #296da9;
+}
+
+.html {
+	width: 90%;
+	animation: html 4s;
+}
+
+.css {
+	width: 75%;
+	animation: css 4s;
+}
+
+.javascript {
+	width: 60%;
+	animation: javascript 4s;
+}
+
+.reactjs {
+	width: 40%;
+	animation: reactjs 4s;
+}
+
+.nodejs {
+	width: 45%;
+	animation: nodejs 4s;
+}
+
+@keyframes html {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+
+@keyframes css {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 75%;
+	}
+}
+
+@keyframes javascript {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 60%;
+	}
+}
+
+@keyframes reactjs {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 40%;
+	}
+}
+
+@keyframes nodejs {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 45%;
+	}
+}
+
 /*Contact*/
 
 #contact form {
@@ -205,6 +344,27 @@ section {
 	height: 56px;
 }
 
+#contact button {
+	-webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background-color: #296da9;
+	border: 2px solid #296da9;
+	color: #fff;
+	font-weight: 500;
+}
+
+#contact button:hover {
+	background-color: transparent;
+	border: 2px solid #202631;
+	color: #202631;
+}
+
+#contact button:active {
+	color: #fff;
+	background-color: #202631;
+
+}
+
 /*Footer*/
 footer .social-links a {
 	border: 1px solid rgba(0, 0, 0, 0.10);
@@ -215,6 +375,14 @@ footer .social-links a {
 	background-color: #f8f8f8;
 }
 
+.footer-top {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 30px;
+}
+
+.cpyright span {
+	padding-left: 10px;
+}
 /*Modal*/
 .modal-backdrop {
 	position: unset !important;
@@ -228,17 +396,7 @@ footer .social-links a {
 	}
 }
 
-@media (min-width: 768px) and (max-width:1020px)  {
-	.img-div {
-		display: flex;
-		justify-content: center;
-		padding-bottom: 2rem;
-	}
-	.about-me {
-		order: 1;
-	}
 
-}
 
 @media (max-width:992px) {
 	.img-div {
@@ -267,8 +425,15 @@ footer .social-links a {
   }
 
   section {
-  	padding: 100px 0 !important;
+  	padding: 60px 0;
+  }
+
+  #footer {
+  	padding: 20px 0 0;
+  }
+
+  .footer-bottom p {
+  	font-size: 12px;
+  	padding-top: 4px !important;
   }
 }
-
-	

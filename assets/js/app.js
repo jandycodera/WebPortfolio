@@ -81,3 +81,26 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+var header = document.querySelector("nav");
+var links = document.querySelectorAll(".nav-link");
+var sections = document.querySelectorAll(".sections");
+window.onscroll = function() {
+    
+    var current = "home";
+    sections.forEach((section)=> {
+        const sectionTop = section.offsetTop;
+        if(pageYOffset >= sectionTop-320) {
+            current = section.getAttribute("id");
+        }
+    })
+    links.forEach((item)=>{
+        item.classList.remove("active");
+        if(item.href.includes(current)){
+            item.classList.add("active");
+        }
+        else {
+            item.classList.remove("active");
+        }
+    })
+}
