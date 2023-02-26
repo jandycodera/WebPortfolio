@@ -1,4 +1,9 @@
 /* CSS Reset */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -80,18 +85,37 @@ section {
 	color: #296da9 !important;
 }
 
-/* Hero section */
-#hero {
-	background: url("../img/cover.jpg");
+/* Landing page background image */
+.banner-image {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/photo_cover.png");
 	min-height: 100vh;
-	background-position: center;
+	background-position: center 60px;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.banner-section {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	z-index: 5;
+	width: 90%;
+}
+
+/* Hero section */
+
+#hero {
+	padding-bottom: 0 !important;
 }
 
 #hero h1 {
 	font-size: 72px;
 	font-weight: 900;
+	color: #fff;
+}
+
+#hero h3 {
+	color: #fff;
 }
 
 #hero a {
@@ -105,8 +129,8 @@ section {
 	-webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 	background-color: transparent;
-	border: 2px solid #202631;
-	color: #202631;
+	border: 2px solid #fff;
+	color: #fff;
 }
 
 #hero a:active {
@@ -168,6 +192,10 @@ section {
 }
 
 /*Work*/
+
+#work {
+	padding-top: 0 !important;
+}
 
 .project h4 {
 	margin-top: 24px;
@@ -257,27 +285,27 @@ section {
 
 .html {
 	width: 90%;
-	animation: html 4s;
+	animation: html 3s;
 }
 
 .css {
 	width: 75%;
-	animation: css 4s;
+	animation: css 3s;
 }
 
 .javascript {
-	width: 60%;
-	animation: javascript 4s;
+	width: 45%;
+	animation: javascript 3s;
 }
 
 .reactjs {
-	width: 40%;
-	animation: reactjs 4s;
+	width: 30%;
+	animation: reactjs 3s;
 }
 
 .nodejs {
-	width: 45%;
-	animation: nodejs 4s;
+	width: 35%;
+	animation: nodejs 3s;
 }
 
 @keyframes html {
@@ -303,7 +331,7 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 60%;
+		width: 45%;
 	}
 }
 
@@ -312,7 +340,7 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 40%;
+		width: 30%;
 	}
 }
 
@@ -321,7 +349,7 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 45%;
+		width: 35%;
 	}
 }
 
@@ -417,7 +445,7 @@ footer .social-links a {
   }
 
   h2, h3, h4, h5 {
-  	font-size: 16px !important;
+  	font-size: 1rem !important;
   }
 
   #navbar {
@@ -436,4 +464,13 @@ footer .social-links a {
   	font-size: 12px;
   	padding-top: 4px !important;
   }
+}
+
+@media (min-width:545px) and (max-width:1257px) {
+	#hero h1 {
+		font-size: 54px;
+	}
+	#hero h3 {
+		font-size: 1.5rem;
+	}
 }
