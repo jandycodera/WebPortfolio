@@ -106,6 +106,7 @@ section {
 
 #hero {
 	padding-bottom: 0 !important;
+	padding-top: 0 !important;
 }
 
 #hero h1 {
@@ -192,10 +193,6 @@ section {
 }
 
 /*Work*/
-
-#work {
-	padding-top: 0 !important;
-}
 
 .project h4 {
 	margin-top: 24px;
