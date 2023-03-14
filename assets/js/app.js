@@ -25,6 +25,16 @@ AOS.init({
 
 // Custom JS 
 
+/* Loader Start */
+
+var loader = document.getElementById('preloader');
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+}); 
+
+/* Loader Start */
+
 /* Typewrite JS Start */ 
 
 var TxtType = function(el, toRotate, period) {
@@ -116,77 +126,26 @@ window.onscroll = function() {
 
 /* Start animation when the section is viewed */
 /* Found the code on how this can be achieved here: https://stackoverflow.com/questions/68559022/start-animation-when-scrolled-into-view */
-const observer0 = new IntersectionObserver(intersections => {
-  intersections.forEach(({
-    target,
-    isIntersecting
-  }) => {
-    target.classList.toggle('html', isIntersecting);
-  });
-}, {
-  threshold: 0
-});
 
-document.querySelectorAll('.html').forEach(div => {
-  observer0.observe(div);
-});
+function animateOnScroll (className) {
+    const observerFunc = new IntersectionObserver(intersections => {
+    intersections.forEach(({
+      target,
+      isIntersecting
+    }) => {
+      target.classList.toggle(`${className}`, isIntersecting);
+    });
+    }, {
+    threshold: 0
+    });
 
-const observer1 = new IntersectionObserver(intersections => {
-  intersections.forEach(({
-    target,
-    isIntersecting
-  }) => {
-    target.classList.toggle('css', isIntersecting);
-  });
-}, {
-  threshold: 0
-});
+    document.querySelectorAll(`.${className}`).forEach(div => {
+      observerFunc.observe(div);
+    });
+}
 
-document.querySelectorAll('.css').forEach(div => {
-  observer1.observe(div);
-});
-
-const observer2 = new IntersectionObserver(intersections => {
-  intersections.forEach(({
-    target,
-    isIntersecting
-  }) => {
-    target.classList.toggle('javascript', isIntersecting);
-  });
-}, {
-  threshold: 0
-});
-
-document.querySelectorAll('.javascript').forEach(div => {
-  observer2.observe(div);
-});
-
-const observer3 = new IntersectionObserver(intersections => {
-  intersections.forEach(({
-    target,
-    isIntersecting
-  }) => {
-    target.classList.toggle('reactjs', isIntersecting);
-  });
-}, {
-  threshold: 0
-});
-
-document.querySelectorAll('.reactjs').forEach(div => {
-  observer3.observe(div);
-});
-
-const observer4 = new IntersectionObserver(intersections => {
-  intersections.forEach(({
-    target,
-    isIntersecting
-  }) => {
-    target.classList.toggle('nodejs', isIntersecting);
-  });
-}, {
-  threshold: 0
-});
-
-document.querySelectorAll('.nodejs').forEach(div => {
-  observer4.observe(div);
-});
+animateOnScroll('html');
+animateOnScroll('css');
+animateOnScroll('javascript');
+animateOnScroll('bootstrap');
+animateOnScroll('nodejs');

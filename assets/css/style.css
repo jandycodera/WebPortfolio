@@ -4,6 +4,7 @@
 	padding:0;
 	box-sizing: border-box;
 }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -37,6 +38,16 @@ section {
 
 .color_blue {
 	color: #296da9;
+}
+
+/* Preloader */
+
+#preloader {
+	background: #f8f8f8 url(../img/loader.gif) no-repeat center center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index:100;
 }
 
 /* Navigation Menu */
@@ -85,28 +96,14 @@ section {
 	color: #296da9 !important;
 }
 
-/* Landing page background image */
-.banner-image {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/photo_cover.png");
+/* Hero section */
+
+#hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95)), url("../img/photo_cover.png");
 	min-height: 100vh;
 	background-position: center 60px;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-.banner-section {
-	position: absolute;
-	top: 40%;
-	left: 10%;
-	z-index: 5;
-	width: 90%;
-}
-
-/* Hero section */
-
-#hero {
-	padding-bottom: 0 !important;
-	padding-top: 0 !important;
 }
 
 #hero h1 {
@@ -137,7 +134,6 @@ section {
 #hero a:active {
 	color: #fff;
 	background-color: #202631;
-
 }
 /* Button */
 .btn {
@@ -292,13 +288,13 @@ section {
 }
 
 .javascript {
-	width: 45%;
+	width: 60%;
 	animation: javascript 3s;
 }
 
-.reactjs {
-	width: 30%;
-	animation: reactjs 3s;
+.bootstrap {
+	width: 80%;
+	animation: bootstrap 3s;
 }
 
 .nodejs {
@@ -329,16 +325,16 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 45%;
+		width: 60%;
 	}
 }
 
-@keyframes reactjs {
+@keyframes bootstrap {
 	0%{
 		width: 0%;
 	}
 	100%{
-		width: 30%;
+		width: 80%;
 	}
 }
 
@@ -388,7 +384,6 @@ section {
 #contact button:active {
 	color: #fff;
 	background-color: #202631;
-
 }
 
 .form-control {
@@ -444,11 +439,11 @@ footer .social-links a {
 
 @media (max-width: 544px) {  
   h1 {
-  	font-size:34px !important;
+  	font-size:40px !important;
   }
 
   h2, h3, h4, h5 {
-  	font-size: 1rem !important;
+  	font-size: 1.2rem !important;
   }
 
   #navbar {
@@ -469,9 +464,9 @@ footer .social-links a {
   }
 }
 
-@media (min-width:545px) and (max-width:1257px) {
+@media (min-width:545px) and (max-width:1399px) {
 	#hero h1 {
-		font-size: 54px;
+		font-size: 52px;
 	}
 	#hero h3 {
 		font-size: 1.5rem;
