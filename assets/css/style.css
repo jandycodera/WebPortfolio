@@ -288,18 +288,18 @@ section {
 }
 
 .javascript {
-	width: 60%;
+	width: 65%;
 	animation: javascript 3s;
 }
 
-.bootstrap {
-	width: 80%;
-	animation: bootstrap 3s;
+.nodejs {
+	width: 55%;
+	animation: nodejs 3s;
 }
 
-.nodejs {
-	width: 35%;
-	animation: nodejs 3s;
+.expressjs {
+	width: 55%;
+	animation: expressjs 3s;
 }
 
 @keyframes html {
@@ -325,16 +325,7 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 60%;
-	}
-}
-
-@keyframes bootstrap {
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 80%;
+		width: 65%;
 	}
 }
 
@@ -343,7 +334,16 @@ section {
 		width: 0%;
 	}
 	100%{
-		width: 35%;
+		width: 55%;
+	}
+}
+
+@keyframes expressjs {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 55%;
 	}
 }
 
@@ -422,9 +422,14 @@ footer .social-links a {
 	}
 }
 
+@media (max-width: 1200px) {
+	#about .intro li {
+		margin: 5px 0;
+		padding: 5px 0;
+	}
+}
 
-
-@media (max-width:992px) {
+@media (max-width:991px) {
 	.img-div {
 		display: flex;
 		justify-content: center;
