@@ -1,291 +1,491 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-	<!-- Remixicon -->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-	<!-- AOS Library -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- Custom External CSS -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<title>My Portfolio</title>
-</head>
-<body>
-	<!-- Pre-loader Start-->
-	<div id="preloader"></div>
-	<!-- Pre-loader End -->
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
 
-	<!-- NAV Start -->
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
-	  <div class="container">
-	    <a class="navbar-brand logo" href="#">DO<span class="color_blue">i</span></a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav ml-lg-4">
-	        <li class="nav-item">
-	          <a class="nav-link active" href="#hero">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#work">Projects</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#about">About</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#contact">Contact</a>
-	        </li>
-	      </ul>
-	      <div class="social-links ml-auto">
-	      	<a href="https://www.facebook.com/doiiiz/" target="_blank"><i class="ri-facebook-fill"></i></a>
-	      	<a href="https://instagram.com/jandeecodera" target="_blank"><i class="ri-instagram-fill"></i></a>
-	      	<a href="https://www.linkedin.com/in/jandy-codera/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-	      </div>
-	    </div>
-	  </div>
-	</nav>
-	<!-- NAV End -->
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-	<!-- Hero Start -->
-	<section id="hero" class="container-fluid sections d-flex align-items-center">
-		<div class="container pt-5">
-			<div class="row">
-				<div class="col-lg-5 banner-section">
-					<h1 data-aos="fade-up">Hi! I'm Jandy</h1>
-					<h3 class="typewrite pb-3" data-period="2000" data-type='[ "Front-end Developer", "Back-end Developer", "Software Engineer"]' data-aos="fade-up" data-aos-delay="300">
-					</h3>
-					<a href="#about" class="btn btn-outline-dark" data-aos="fade-up" data-aos-delay="500">More About me</a>
-				</div>	
-			</div>
-		</div>
-	</section>
-	<!-- Hero End -->
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "103041546142222");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-	<!-- PROJECTS Start -->
-	<section id="work" class="sections">
-		<div class="container">
-			<div class="row" data-aos="zoom-in">
-				<div class="col-12">
-					<div class="intro text-center">
-						<div class="hr-line"></div>
-						<h1 class="display-4">My Pro<span class="color_blue">jects</span></h1>
-						<p class="ml-auto mr-auto text-center">Take a look at my latest projects!</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_1.jpg">
-						</div>
-						<h4 class="text-center">Project 1</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v16.0",
+        });
+      };
 
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in" data-aos-delay="300">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_2.jpg">
-						</div>
-						<h4 class="text-center">Project 2</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in" data-aos-delay="400">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_3.jpg">
-						</div>
-						<h4 class="text-center">Project 3</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
+    <!-- Pre-loader Start-->
+    <div id="preloader"></div>
+    <!-- Pre-loader End -->
 
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in" data-aos-delay="500">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_4.jpg">
-						</div>
-						<h4 class="text-center">Project 4</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
+    <!-- NAV Start -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand logo" href="#"
+          >DO<span class="color_blue">i</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="social-links ml-auto">
+            <a href="https://www.facebook.com/doiiiz/" target="_blank"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="https://instagram.com/jandeecodera" target="_blank"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jandy-codera/" target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV End -->
 
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in" data-aos-delay="600">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_5.jpg">
-						</div>
-						<h4 class="text-center">Project 5</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
+    <!-- Hero Start -->
+    <section
+      id="hero"
+      class="container-fluid sections d-flex align-items-center"
+    >
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-5 banner-section">
+            <h1 data-aos="fade-up">Hi! I'm Jandy</h1>
+            <h3
+              class="typewrite pb-3"
+              data-period="2000"
+              data-type='[ "Front-end Developer", "Back-end Developer", "Software Engineer"]'
+              data-aos="fade-up"
+              data-aos-delay="300"
+            ></h3>
+            <a
+              href="#about"
+              class="btn btn-outline-dark"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              >More About me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
 
-				<div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in" data-aos-delay="700">
-					<div class="project text-center">
-						<div class="image-wrapper">
-							<img src="./assets/img/pro_6.jpg">
-						</div>
-						<h4 class="text-center">Project 6</h4>
-						<a href="" class="link-arrow justify-content-center">View this project<i class="ri-arrow-right-up-line"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- PROJECTS End -->
+    <!-- PROJECTS Start -->
+    <section id="work" class="sections">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-12">
+            <div class="intro text-center">
+              <div class="hr-line"></div>
+              <h1 class="display-4">
+                My Pro<span class="color_blue">jects</span>
+              </h1>
+              <p class="ml-auto mr-auto text-center">
+                Take a look at my latest projects!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in">
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_1.jpg" />
+              </div>
+              <h4 class="text-center">Project 1</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
 
-	<!-- ABOUT ME Start -->
+          <div
+            class="col-lg-4 col-sm-6 pb-5"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_2.jpg" />
+              </div>
+              <h4 class="text-center">Project 2</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
 
-	<section id="about" class="sections">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 about-me" data-aos="fade-right">
-					<div class="intro mb-4">
-						<div class="hr-line"></div>
-						<h1 class="display-4">About <span class="color_blue">Me</span></h1>
-					</div>
-					<p class="pb-4">Hi! My name is Jandy, a Computer Engineering graduate in Cebu Institute of Technology - University. I'm a former Technical Support Engineer/Team Lead on my previous company and looking to shift to a career in Web Development. I am very passionate about learning and exploring new technologies in hopes of sharpening my skills and expanding my knowledge in the world of software.</p>
-					<div class="intro">
-						<h4>Skills</h4>
-						<li><p>HTML</p>
-							<span class="bar"><span class="html"></span></span>
-						</li>
-						<li><p>CSS</p>
-							<span class="bar"><span class="css"></span></span>
-						</li>
-						<li><p>JavaScript</p>
-							<span class="bar"><span class="javascript"></span></span>
-						</li>
-						<li><p>Node.js</p>
-							<span class="bar"><span class="nodejs"></span></span>
-						</li>
-						<li><p>Express.js</p>
-							<span class="bar"><span class="expressjs"></span></span>
-						</li>
-						
-					</div>
-					<a href="./assets/img/resume.rar" download class="btn btn-outline-dark">Download My CV</a>
-				</div>
-				<div class="col-lg-6 offset-lg-1 img-div float-right" data-aos="zoom-in-down">
-					<img src="./assets/img/about_me.jpg">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ABOUT ME End -->
+          <div
+            class="col-lg-4 col-sm-6 pb-5"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_3.jpg" />
+              </div>
+              <h4 class="text-center">Project 3</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
 
-	<!-- CONTACT ME Start -->
+          <div
+            class="col-lg-4 col-sm-6 pb-5"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_4.jpg" />
+              </div>
+              <h4 class="text-center">Project 4</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
 
-	<section id="contact" class="sections">
-		<div class="container">
-			<div class="row">
-				<div class="col-12" data-aos="fade-up">
-					<div class="intro text-center">
-						<div class="hr-line"></div>
-						<h1 class="display-4">Contact <span class="color_blue">Me</span></h1>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-8 ml-auto mr-auto" data-aos="fade-up">
-					<form action="" class="row">
-						<div class="col-lg-6 pb-3">
-							<input class="form-control" type="text" placeholder="Name">
-						</div>
-						<div class="col-lg-6 pb-3">
-							<input class="form-control" type="email" placeholder="Email">
-						</div>
-						<div class="col-lg-12 pb-3">
-							<input class="form-control" type="email" placeholder="Subject">
-						</div>
-						<div class="col-lg-12 pb-3">
-							<textarea class="form-control" placeholder="Message" rows="5"></textarea>
-						</div>
-						<div class="col-12">
-							<button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Send Message</button>
-						</div>
-						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						  <div class="modal-dialog">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Thank you for reaching out!</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
-						      </div>
-						      <div class="modal-body">
-						        I'll get back to you shortly.
-						      </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+          <div
+            class="col-lg-4 col-sm-6 pb-5"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_5.jpg" />
+              </div>
+              <h4 class="text-center">Project 5</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
 
-	<!-- CONTACT ME End -->
+          <div
+            class="col-lg-4 col-sm-6 pb-5"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <div class="project text-center">
+              <div class="image-wrapper">
+                <img src="./assets/img/pro_6.jpg" />
+              </div>
+              <h4 class="text-center">Project 6</h4>
+              <a href="" class="link-arrow justify-content-center"
+                >View this project<i class="ri-arrow-right-up-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS End -->
 
-	<!-- FOOTER Start -->
-	<section id="footer">
-		<footer>
-			<div class="container footer-top">
-				<div class="row justify-content-between">
-					<div class="col-auto">
-						<div>
-							<p class="mb-0">EMAIL</p>
-							<h3>jandycodera@gmail.com</h3>
-						</div>
-						<div class="mt-4">
-							<p class="mb-0">PHONE</p>
-							<h3>+63945 728 7720</h3>
-						</div>
-					</div>
-					<div class="col-auto">
-						<h5 class="mb-3">Follow me on</h5>
-						<div class="social-links ml-auto">
-							<a href="https://www.facebook.com/doiiiz/" target="_blank"><i class="ri-facebook-fill"></i></a>
-							<a href="https://instagram.com/jandeecodera" target="_blank"><i class="ri-instagram-fill"></i></a>
-							<a href="https://www.linkedin.com/in/jandy-codera/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container footer-bottom">
-				<div class="row text-center">
-					<div class="col-12">
-						<div>
-							<p class="mb-0 py-2 cpyright">Copyright &copy; 2023 Jandy Codera<span>|</span><span>All rights reserved.</span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</section>
-	<!-- FOOTER End -->
+    <!-- ABOUT ME Start -->
 
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-	<!-- AOS Library JS -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script type="text/javascript" src="./assets/js/app.js"></script>
-</body>
+    <section id="about" class="sections">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 about-me" data-aos="fade-right">
+            <div class="intro mb-4">
+              <div class="hr-line"></div>
+              <h1 class="display-4">
+                About <span class="color_blue">Me</span>
+              </h1>
+            </div>
+            <p class="pb-4">
+              Hi! My name is Jandy, a Computer Engineering graduate in Cebu
+              Institute of Technology - University. I'm a former Technical
+              Support Engineer/Team Lead on my previous company and looking to
+              shift to a career in Web Development. I am very passionate about
+              learning and exploring new technologies in hopes of sharpening my
+              skills and expanding my knowledge in the world of software.
+            </p>
+            <div class="intro">
+              <h4>Skills</h4>
+              <li>
+                <p>HTML</p>
+                <span class="bar"><span class="html"></span></span>
+              </li>
+              <li>
+                <p>CSS</p>
+                <span class="bar"><span class="css"></span></span>
+              </li>
+              <li>
+                <p>JavaScript</p>
+                <span class="bar"><span class="javascript"></span></span>
+              </li>
+              <li>
+                <p>Node.js</p>
+                <span class="bar"><span class="nodejs"></span></span>
+              </li>
+              <li>
+                <p>Express.js</p>
+                <span class="bar"><span class="expressjs"></span></span>
+              </li>
+            </div>
+            <a
+              href="./assets/img/resume.rar"
+              download
+              class="btn btn-outline-dark"
+              >Download My CV</a
+            >
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 img-div float-right"
+            data-aos="zoom-in-down"
+          >
+            <img src="./assets/img/about_me.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT ME End -->
+
+    <!-- CONTACT ME Start -->
+
+    <section id="contact" class="sections">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up">
+            <div class="intro text-center">
+              <div class="hr-line"></div>
+              <h1 class="display-4">
+                Contact <span class="color_blue">Me</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 ml-auto mr-auto" data-aos="fade-up">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/619fbc74891a547fa431b676f139a954"
+              method="POST"
+              class="row"
+            >
+              <div class="col-lg-6 pb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                />
+              </div>
+              <div class="col-lg-6 pb-3">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Email"
+                  name="Email"
+                />
+              </div>
+              <div class="col-lg-12 pb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Subject"
+                  name="Subject"
+                />
+              </div>
+              <div class="col-lg-12 pb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Message"
+                  rows="5"
+                  name="Message"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  class="btn btn-dark"
+                >
+                  Send Message
+                </button>
+              </div>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Thank you for reaching out!
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">I'll get back to you shortly.</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME End -->
+
+    <!-- FOOTER Start -->
+    <section id="footer">
+      <footer>
+        <div class="container footer-top">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <div>
+                <p class="mb-0">EMAIL</p>
+                <h3>jandycodera@gmail.com</h3>
+              </div>
+              <div class="mt-4">
+                <p class="mb-0">PHONE</p>
+                <h3>+63945 728 7720</h3>
+              </div>
+            </div>
+            <div class="col-auto">
+              <h5 class="mb-3">Follow me on</h5>
+              <div class="social-links ml-auto">
+                <a href="https://www.facebook.com/doiiiz/" target="_blank"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+                <a href="https://instagram.com/jandeecodera" target="_blank"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jandy-codera/"
+                  target="_blank"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <div class="row text-center">
+            <div class="col-12">
+              <div>
+                <p class="mb-0 py-2 cpyright">
+                  Copyright &copy; 2023 Jandy Codera<span>|</span
+                  ><span>All rights reserved.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- FOOTER End -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+  </body>
 </html>
