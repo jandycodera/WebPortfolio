@@ -163,10 +163,22 @@
           <div class="col-lg-4 col-sm-6 pb-5" data-aos="zoom-in">
             <div class="project text-center">
               <div class="image-wrapper">
-                <img src="./assets/img/pro_1.jpg" />
+                <img src="./assets/img/proj_1.png" />
               </div>
-              <h4 class="text-center">Project 1</h4>
-              <a href="" class="link-arrow justify-content-center"
+              <div class="caption">
+                <p>
+                  A simple React app where you can search for any monster by its
+                  name. This is a project I learned from the course "Complete
+                  React Developer in 2023"
+                </p>
+              </div>
+            </div>
+            <div class="proj_info">
+              <h4 class="text-center">Monsters Rolodex</h4>
+              <a
+                target="_blank"
+                href="https://monsters-rolodex-kappa-eight.vercel.app"
+                class="link-arrow justify-content-center"
                 >View this project<i class="ri-arrow-right-up-line"></i
               ></a>
             </div>
@@ -179,10 +191,21 @@
           >
             <div class="project text-center">
               <div class="image-wrapper">
-                <img src="./assets/img/pro_2.jpg" />
+                <img src="./assets/img/proj_2.png" />
               </div>
-              <h4 class="text-center">Project 2</h4>
-              <a href="" class="link-arrow justify-content-center"
+              <div class="caption">
+                <p>
+                  Kanban Board is an application used to keep track and manage
+                  your daily tasks.
+                </p>
+              </div>
+            </div>
+            <div class="proj_info">
+              <h4 class="text-center">Kanban Board</h4>
+              <a
+                target="_blank"
+                href="https://zythorn.github.io/kanban-board"
+                class="link-arrow justify-content-center"
                 >View this project<i class="ri-arrow-right-up-line"></i
               ></a>
             </div>
@@ -195,58 +218,22 @@
           >
             <div class="project text-center">
               <div class="image-wrapper">
-                <img src="./assets/img/pro_3.jpg" />
+                <img src="./assets/img/proj_3.png" />
               </div>
-              <h4 class="text-center">Project 3</h4>
-              <a href="" class="link-arrow justify-content-center"
-                >View this project<i class="ri-arrow-right-up-line"></i
-              ></a>
+              <div class="caption">
+                <p>
+                  This is the project I made during the bootcamp which is an
+                  Ecommerce website build using MERN stack technologies. I was
+                  awarded the Best Capstone 3 for this project.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-sm-6 pb-5"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <div class="project text-center">
-              <div class="image-wrapper">
-                <img src="./assets/img/pro_4.jpg" />
-              </div>
-              <h4 class="text-center">Project 4</h4>
-              <a href="" class="link-arrow justify-content-center"
-                >View this project<i class="ri-arrow-right-up-line"></i
-              ></a>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-sm-6 pb-5"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-          >
-            <div class="project text-center">
-              <div class="image-wrapper">
-                <img src="./assets/img/pro_5.jpg" />
-              </div>
-              <h4 class="text-center">Project 5</h4>
-              <a href="" class="link-arrow justify-content-center"
-                >View this project<i class="ri-arrow-right-up-line"></i
-              ></a>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-sm-6 pb-5"
-            data-aos="zoom-in"
-            data-aos-delay="700"
-          >
-            <div class="project text-center">
-              <div class="image-wrapper">
-                <img src="./assets/img/pro_6.jpg" />
-              </div>
-              <h4 class="text-center">Project 6</h4>
-              <a href="" class="link-arrow justify-content-center"
+            <div class="proj_info">
+              <h4 class="text-center">Capstone Project - JGC Scents</h4>
+              <a
+                target="_blank"
+                href="https://capstone-3-coderaj.vercel.app/"
+                class="link-arrow justify-content-center"
                 >View this project<i class="ri-arrow-right-up-line"></i
               ></a>
             </div>
@@ -289,6 +276,10 @@
               <li>
                 <p>JavaScript</p>
                 <span class="bar"><span class="javascript"></span></span>
+              </li>
+              <li>
+                <p>React.js</p>
+                <span class="bar"><span class="reactjs"></span></span>
               </li>
               <li>
                 <p>Node.js</p>
@@ -341,6 +332,7 @@
             >
               <div class="col-lg-6 pb-3">
                 <input
+                  id="name"
                   class="form-control"
                   type="text"
                   placeholder="Name"
@@ -349,6 +341,7 @@
               </div>
               <div class="col-lg-6 pb-3">
                 <input
+                  id="email"
                   class="form-control"
                   type="email"
                   placeholder="Email"
@@ -357,6 +350,7 @@
               </div>
               <div class="col-lg-12 pb-3">
                 <input
+                  id="subject"
                   class="form-control"
                   type="text"
                   placeholder="Subject"
@@ -365,6 +359,7 @@
               </div>
               <div class="col-lg-12 pb-3">
                 <textarea
+                  id="message"
                   class="form-control"
                   placeholder="Message"
                   rows="5"
@@ -377,6 +372,7 @@
                   data-toggle="modal"
                   data-target="#exampleModal"
                   class="btn btn-dark"
+                  onclick="clearFields()"
                 >
                   Send Message
                 </button>
